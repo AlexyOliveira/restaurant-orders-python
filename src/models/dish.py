@@ -44,5 +44,6 @@ class Dish:
 # dish_name = "Strogonoff"
 # dish_price = 22.50
 # dish = Dish(dish_name, dish_price)
-# dish.add_ingredient_dependency(Ingredient("queijo mussarela"), 23)
-# print(dish.get_ingredients())
+# dish.add_ingredient_dependency("queijo mussarela", 15)
+# print(dish.recipe)
+
