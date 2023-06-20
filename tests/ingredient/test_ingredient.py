@@ -3,7 +3,9 @@ from src.models.ingredient import Ingredient, Restriction
 
 # Req 1
 def test_ingredient():
-    # a classe pode ser instanciada corretamente de acordo com a assinatura esperada
+    # a classe pode ser instanciada corretamente de acordo
+    # com a assinatura esperada
+
     ingredient_name = "queijo mussarela"
     ingredient = Ingredient(ingredient_name)
     assert ingredient.name == ingredient_name
@@ -21,8 +23,8 @@ def test_ingredient():
 
     # o método mágico __eq__ funcione como esperado
 
-    assert ingredient1.__eq__(ingredient2) == False
-    assert ingredient1.__eq__(ingredient1) == True
+    assert ingredient1.__eq__(ingredient2) is False
+    assert ingredient1.__eq__(ingredient1) is True
     # o atributo conjunto restrictions é populado como esperado
     expected_restrictions = {Restriction.ANIMAL_DERIVED, Restriction.LACTOSE}
 
