@@ -61,8 +61,3 @@ class Ingredient:
 
     def __repr__(self) -> str:
         return f"Ingredient('{self.name}')"
-
-
-# ingredient_name = "queijo mussarela"
-# ingredient = Ingredient(ingredient_name)
-# print(ingredient.__hash__())

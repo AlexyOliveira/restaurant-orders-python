@@ -39,3 +39,10 @@ class Dish:
 
     def get_ingredients(self):
         return set(self.recipe.keys())
+
+
+# dish_name = "Strogonoff"
+# dish_price = 22.50
+# dish = Dish(dish_name, dish_price)
+# dish.add_ingredient_dependency(Ingredient("queijo mussarela"), 23)
+# print(dish.get_ingredients())
