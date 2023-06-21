@@ -6,7 +6,7 @@ Um primeiro time iniciou o desenvolvimento deste projeto e já preparou uma estr
 
 <details>
   <summary><strong>👨‍💻 Habilidades exercitadas</strong></summary><br />
-  - Praticar o conceito de Hashmaps através das estruturas de dados Dict e Set do Python;
-  - Praticar os conhecimentos de testes de software;
-  - Praticar os conhecimentos de orientação a objetos.
+  - Praticar o conceito de Hashmaps através das estruturas de dados Dict e Set do Python
+  - Praticar os conhecimentos de testes de software
+  - Praticar os conhecimentos de orientação a objetos
 </details>
