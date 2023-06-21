@@ -1,5 +1,4 @@
 from typing import Dict, List
-
 from services.inventory_control import InventoryMapping
 from services.menu_data import MenuData
 
@@ -24,6 +23,34 @@ class MenuBuilder:
 
         self.inventory.consume_recipe(curr_dish.recipe)
 
-    # Req 4
     def get_main_menu(self, restriction=None) -> List[Dict]:
-        pass
+        dish_list = []
+        filtered_dish_list = []
+
+        if not restriction:
+            for dish in self.menu_data.dishes:
+                dish_list.append(
+                    {
+                        "dish_name": dish.name,
+                        "ingredients": dish.get_ingredients(),
+                        "price": dish.price,
+                        "restrictions": dish.get_restrictions(),
+                    }
+                )
+            return dish_list
+        else:
+            for dish in self.menu_data.dishes:
+                if restriction not in dish.get_restrictions():
+                    filtered_dish_list.append(
+                        {
+                            "dish_name": dish.name,
+                            "ingredients": dish.get_ingredients(),
+                            "price": dish.price,
+                            "restrictions": dish.get_restrictions(),
+                        }
+                    )
+            return filtered_dish_list
+
+
+# b = MenuBuilder()
+# print(b.get_main_menu("LACTOSE"))
